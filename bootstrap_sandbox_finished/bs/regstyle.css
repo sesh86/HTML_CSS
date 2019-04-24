@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box; 
+}
+body,html{
+    height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-img{
+    background-image:  url(./flash-logo-dc-comic.jpg);
+        /* Full height */
+     min-height: 380px; 
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    position: relative;
+}
+
+#form{ margin-top: 20px; 
+    margin-bottom: 20px;    
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity:0.95;
+    min-height: 500px;
+    padding: 0px 40px 40px 40px;
+     box-shadow: 0px 0px 40px 16px rgba(175, 175, 175, 0.5);
+}
+#form input {
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+   
+}
+#form:hover {
+            box-shadow: 0px 0px 40px 16px rgba(255, 114, 114, 0.5);
+
+        }
+.registration{
+    font-size: 55px;
+    font-weight: 700;
+    border-bottom-style: ridge;
+    font-family: Agency FB;
+    color: white;
+    margin-bottom: 10px;
+}
+.text{
+        
+}
+label{
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+.btn-primary{
+    padding: 8px;
+    width: 30%;
+    font-size: 16px;
+}
+.btn-danger{
+    padding: 8px;
+    width: 30%;
+     font-size: 16px;
+    
+}
