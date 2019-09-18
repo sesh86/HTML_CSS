@@ -19,5 +19,5 @@ var postSchema = Schema({
 var User = mongoose.model('User', userSchema);
 var Post = mongoose.model('Post', postSchema);
 
-p=new Post({user:'5c7572cf0e8caaf6e6e72e1a',title:'Post2',content:'content3'})
+p=new Post({user:'5d7b0e7d60d063077abe0132',title:'Post2',content:'content3'})
 p.save(function (err) {console.log('saved');});

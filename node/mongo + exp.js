@@ -1,4 +1,3 @@
-
 var mongoose=require('mongoose');
 
 const _app=require('./config.js');
@@ -17,12 +16,9 @@ const express = require('express')
 const app = express();
 
 app.get('/', function (req, res) {
-  dog.save(function (err) {
-    if (err) {
-      console.log(err);
-    } else {
-      res.send('wowww')
-    }
+  pet.find({},function (err, data) {
+    if (err) return console.error(err);
+      res.send(data)
   });
   
 })

@@ -17,8 +17,9 @@ var pet = mongoose.model('pet', { name: String, breed:String, pet_id:Number });
 // });
 
 //
-pet.find({},function (err, data) {
+pet.find({}).sort({breed:-1}).skip(1).limit(1).exec(function (err, data) {
   if (err) return console.error(err);
     console.log(data)
 });
 
+//Asc - 1, desc - -1

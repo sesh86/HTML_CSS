@@ -6,9 +6,10 @@ var pet = mongoose.model('pets', { name: String, breed:String, pet_id:Number });
 
 //updateOne-this updates only the first record even though multiple record matches
 //updateMany-this updates all records with the condition
-pet.updateMany({name:/^Julie/i},{name:'Danny',breed:'Bull Dog'},function (err, pets) {
+pet.updateOne({name:/^cheetah/i},{name:'Tiger'},function (err, pets) {
   if (err){return console.error(err);}
-  for(i=0;i<pets.length;i++){
-  console.log(pets[i].name+'--'+pets[i].breed);}
+  console.log('after update')
+  // for(i=0;i<pets.length;i++){
+  // console.log(pets[i].name+'--'+pets[i].breed);}
 });
 console.log('Updated');
